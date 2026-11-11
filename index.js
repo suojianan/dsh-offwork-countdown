@@ -30,6 +30,8 @@ export function apply(ctx) {
       child = spawn(executable, [], {
         stdio: 'ignore',
         windowsHide: false,
+        // The widget must outlive the short-lived plugin apply/HMR operation.
+        detached: true,
       })
     } catch (error) {
       ctx.logger?.warn?.(`[offwork-countdown] could not start: ${error.message}`)
