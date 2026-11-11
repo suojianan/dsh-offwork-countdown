@@ -1,6 +1,6 @@
 {
   "name": "dsh-offwork-countdown",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Windows desktop companion plugin: launches a semi-transparent, always-on-top off-work countdown widget.",
   "type": "module",
   "main": "index.js",
@@ -16,6 +16,9 @@
     "README.md",
     "LICENSE",
     "screenshots.json",
+    "working.png",
+    "states.png",
+    "settings.png",
     "source.zip"
   ],
   "os": [
