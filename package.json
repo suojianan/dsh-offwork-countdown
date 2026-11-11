@@ -1,0 +1,42 @@
+{
+  "name": "dsh-offwork-countdown",
+  "version": "1.0.0",
+  "description": "Windows desktop companion plugin: launches a semi-transparent, always-on-top off-work countdown widget.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "OffWorkCountdown.exe",
+    "icon.png",
+    "README.md",
+    "LICENSE",
+    "screenshots.json",
+    "source.zip"
+  ],
+  "os": [
+    "win32"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek",
+    "harness",
+    "countdown",
+    "desktop",
+    "windows"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suojianan/dsh-offwork-countdown.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
